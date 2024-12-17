@@ -41,14 +41,16 @@
         <button onclick="showCard()">Получить открытку</button>
     </div>
     <div class="card" id="card">
-        <h2 id="message"></h2>
+        <h1 id="message"></h1>
     </div>
 
     <script>
         function showCard() {
             const name = document.getElementById('nameInput').value;
             const messageElement = document.getElementById('message');
-            messageElement.textContent = name ? `Привет, ${name}! С Новым годом! Пусть этот год принесет в вашу жизнь радость, успех и вдохновение. Желаю здоровья, счастья и исполнения самых заветных желаний. Пусть каждый день будет наполнен светом, добротой и яркими моментами! С праздником!` : 'Поздравляю тебя с Новым Годом! Желаю счастья и удачи в новом году!';
+            messageElement.innerHTML = name 
+                ? `Привет, ${name}!<br><br>С Новым годом! Пусть 2025 год станет для вас годом чудес, новых начинаний и ярких свершений. Желаю удачи во всех делах и тепла в сердцах!` 
+                : 'Поздравляю тебя с Новым Годом! Желаю счастья и удачи в новом году!';
             
             document.querySelector('.greeting').style.display = 'none';
             document.getElementById('card').style.display = 'block';
