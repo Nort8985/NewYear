@@ -48,7 +48,7 @@
         function showCard() {
             const name = document.getElementById('nameInput').value;
             const messageElement = document.getElementById('message');
-            messageElement.textContent = name ? `Привет ${name}! С Новым годом! Пусть этот год принесет в вашу жизнь радость, успех и вдохновение. Желаю здоровья, счастья и исполнения самых заветных желаний. Пусть каждый день будет наполнен светом, добротой и яркими моментами! С праздником!` : 'Поздравляю тебя с Новым Годом! Желаю счастья и удачи в новом году!';
+            messageElement.textContent = name ? `Привет, ${name}! С Новым годом! Пусть этот год принесет в вашу жизнь радость, успех и вдохновение. Желаю здоровья, счастья и исполнения самых заветных желаний. Пусть каждый день будет наполнен светом, добротой и яркими моментами! С праздником!` : 'Поздравляю тебя с Новым Годом! Желаю счастья и удачи в новом году!';
             
             document.querySelector('.greeting').style.display = 'none';
             document.getElementById('card').style.display = 'block';
